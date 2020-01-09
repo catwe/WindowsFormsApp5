@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F89F3239-228B-4F64-85E2-D3C3C3F6DCF4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp5</RootNamespace>
+    <AssemblyName>WindowsFormsApp5</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CheckedListBoxFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckedListBoxFrom.Designer.cs">
+      <DependentUpon>CheckedListBoxFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ColorDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ColorDialogForm.Designer.cs">
+      <DependentUpon>ColorDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ComboBoxForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ComboBoxForm.Designer.cs">
+      <DependentUpon>ComboBoxForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContextMenuStripForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContextMenuStripForm.Designer.cs">
+      <DependentUpon>ContextMenuStripForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DateTimePickerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DateTimePickerForm.Designer.cs">
+      <DependentUpon>DateTimePickerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListBoxForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListBoxForm.Designer.cs">
+      <DependentUpon>ListBoxForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDIForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIForm.Designer.cs">
+      <DependentUpon>MDIForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MonthCalendarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MonthCalendarForm.Designer.cs">
+      <DependentUpon>MonthCalendarForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpenFileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpenFileForm.Designer.cs">
+      <DependentUpon>OpenFileForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PictureBoxForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PictureBoxForm.Designer.cs">
+      <DependentUpon>PictureBoxForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SaveFileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SaveFileForm.Designer.cs">
+      <DependentUpon>SaveFileForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimerForm.Designer.cs">
+      <DependentUpon>TimerForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CheckedListBoxFrom.resx">
+      <DependentUpon>CheckedListBoxFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ColorDialogForm.resx">
+      <DependentUpon>ColorDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComboBoxForm.resx">
+      <DependentUpon>ComboBoxForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContextMenuStripForm.resx">
+      <DependentUpon>ContextMenuStripForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DateTimePickerForm.resx">
+      <DependentUpon>DateTimePickerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListBoxForm.resx">
+      <DependentUpon>ListBoxForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIForm.resx">
+      <DependentUpon>MDIForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MonthCalendarForm.resx">
+      <DependentUpon>MonthCalendarForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpenFileForm.resx">
+      <DependentUpon>OpenFileForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PictureBoxForm.resx">
+      <DependentUpon>PictureBoxForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SaveFileForm.resx">
+      <DependentUpon>SaveFileForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimerForm.resx">
+      <DependentUpon>TimerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
